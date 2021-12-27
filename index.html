@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Week 1 Testsite AdTech</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+
+<!--- Ad Integration --->
+        <script type="text/javascript">
+                var winW = window.innerWidth || window.document.documentElement.clientWidth || window.document.body.clientWidth;
+                // gives configs of the page
+                adSSetup = {
+                    view: ((window.screen && screen.availWidth && (screen.availWidth <= 800)) || winW <= 800) ? "m" : "d", // has to fit the design of the page
+//2. Switch for the 3th party scripts. 
+                    partners: false,
+                    //adSlots: ["sas_3648","sas_3650","sas_5419","sas_4459","sas_4460","sas_4460_2","sas_4460_3","sas_3651","sas_18913"],
+ //3. Define the ad placements for the website                  
+                    adPlacements: [],
+ //4. Define the sizes for every ad placement:                   
+                    adSlotSizes: {
+                        "superbanner": [{
+                            "minWidth": 1,
+                            "sizes": [[728, 600], [728, 90]]
+                        }]
+                    },
+                    colorBg: !0, // enable/disable coloring of the page-background
+                    bgClick: !0, // enable/disable click on page-background
+                    stickySky: !0, // enable/disable stickyness for skyscraper
+                    pageName: "demo_story", // defines pageName don't change for testing
+                    target: "singleAds;multiAds;ich;du;team=adtech,MIT;"
+                };
+//1. Set the viewport of the website. Use for desktop "d"
+                if (adSSetup.view === "d") {
+                    adSSetup.adPlacements.push("superbanner", "sky", "billboard", "mrec", "mrec_btf", "mrec_btf_2", "mrec_btf_3", "inpage");
+                } else {
+                    adSSetup.adPlacements.push("banner", "mrec", "mrec_btf", "mrec_btf_2", "mrec_btf_3", "inpage");
+                }
+
+
+        </script>
+    
+    <script type="text/javascript" src="https://www.asadcdn.com/adlib/pages/wieistmeineip.js"></script>
+
+    </head>
+<!--- --->
+        <header>
+
+            <div>
+                <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Logo_Axel_Springer_SE.svg" 
+                alt="Logo"
+                class="logo">
+            </div>
+
+
+
+            <div class="top">
+                <ul class="nav-menu">
+                    <li class="home-btn"><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">News</a></li>
+
+                </ul>
+
+            </div>
+
+        
+        </header>
+
+    <body>
+        
+        <div>
+            <img 
+            src="https://www.tagesschau.de/multimedia/bilder/axelspringer-101~_v-gross20x9.jpg" 
+            alt="AxelSpringer"
+            class="">
+        </div>
+
+        <div id="superbanner"></div>
+        
+    </body>
+</html>

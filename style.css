@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+header{
+    background-image: url('asimage.jpeg')
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+}
+
+.nav-menu{
+    float: right;
+    list-style: none;
+    margin-top:30px;
+    
+
+}
+
+.nav-menu li{
+    display:inline-block;
+}
+
+.nav-menu li a {
+    color: blue;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Montserrat", "sans-serif";
+    font-size: 20px;
+
+}
+
+.home-btn a{
+    border: 5px solid magenta;
+   //background-color:cyan;
+
+}
+
+.logo{
+    padding: 5px 20px;
+    //width:105px;
+    //height:142px;
+}
+
+
+placeholder: {
+    
+        border-color: "#EEEDE8";
+        background-color: "#F9F9F7";
+        admarkPosition: "bottom right",	// options: "hidden", "top/bottom", "left/center/right" ;
+        color: "#BCBCBC";
+        font-size: "12px";
+        font-family: "Tahoma";
+    
+}
