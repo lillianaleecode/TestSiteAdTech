@@ -22,8 +22,13 @@
                     adSlotSizes: {
                         "superbanner": [{
                             "minWidth": 1,
-                            "sizes": [[728, 90]]
-                        }]
+                            "sizes": [[728, 90]]}],
+
+                        "mrec": [{
+                            "minWidth": 1,
+                            "sizes": [[300, 250], 
+                            [300, 600]]}]
+                        
                     },
                     colorBg: !0, // enable/disable coloring of the page-background
                     bgClick: !0, // enable/disable click on page-background
@@ -32,10 +37,11 @@
                     target: "singleAds;multiAds;ich;du;team=adtech,MIT;"
                 };
 //1. Set the viewport of the website. Use for desktop "d"
+//adSSetup.adPlacements.push("superbanner", "sky", "billboard", "mrec", "mrec_btf", "mrec_btf_2", "mrec_btf_3", "inpage");
                 if (adSSetup.view === "d") {
-                    adSSetup.adPlacements.push("superbanner", "sky", "billboard", "mrec", "mrec_btf", "mrec_btf_2", "mrec_btf_3", "inpage");
+                    adSSetup.adPlacements.push("superbanner",  "mrec");
                 } else {
-                    adSSetup.adPlacements.push("banner", "mrec", "mrec_btf", "mrec_btf_2", "mrec_btf_3", "inpage");
+                    adSSetup.adPlacements.push( "mrec");
                 }
 
 
@@ -79,6 +85,7 @@
         </div>
 
         <div id="superbanner"></div>
+        <div id="mrec"></div>
         
     </body>
 </html>
